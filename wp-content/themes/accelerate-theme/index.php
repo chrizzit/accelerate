@@ -11,12 +11,12 @@
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Marketing 2.0
  */
 
 get_header(); ?>
 	<!-- BLOG PAGE -->
-	<section class="blog-page">
+	<section class="index-page">
 		<div class="site-content">
 			<div class="main-content">
 
@@ -61,7 +61,7 @@ get_header(); ?>
 
 
 		</div>
+		<div class="right"><?php previous_posts_link('<span>Newer Posts</span> &rarr;'); ?></div>
+	</div>
 
-	</section>
-	<!-- END blog page -->
 <?php get_footer();
