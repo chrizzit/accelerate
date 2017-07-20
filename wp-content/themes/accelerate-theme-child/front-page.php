@@ -25,4 +25,13 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+<section class="recent-posts clearfix">
+	<div class="site-content">
+    <div class="blog-post">
+      <h4>From the Blog</h4>
+      <?php query_posts('posts_per_page=1'); ?>
+    </div>
+	</div>
+</section>
+
 <?php get_footer(); ?>
