@@ -50,3 +50,37 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+
+/*case study page*/
+aside.case-study-sidebar {
+  float: left;
+  width: 36%;
+  margin: 2em 15px 0 5px;
+}
+aside.case-study-sidebar h2, h4, h5, h6 {
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+aside.case-study-sidebar h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+aside.case-study-sidebar h5 {
+  opacity: .50;
+  font-size: .75em;
+}
+aside.case-study-sidebar p {
+  margin-top: 30px;
+  height: 310px;
+  overflow: hidden;
+}
+div.case-study-images {
+  display: block;
+  float: left;
+  width: 60%;
+  margin: 2em 0px 1em 10px;
+}
+div.case-study-images p {
+  margin-top: 0;
+}
