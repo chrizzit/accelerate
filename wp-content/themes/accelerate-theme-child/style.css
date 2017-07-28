@@ -26,8 +26,44 @@
 }
 
 
+/*case studies on homepage*/
+.homepage-featured-work {
+	overflow:auto;
+}
+.homepage-featured-work h4 {
+	font-family:'Montserrat';
+	text-transform:uppercase;
+	text-align:center;
+	margin:0 0 40px;
+}
+.homepage-featured-work ul {
+	margin:0;
+}
+.individual-featured-work {
+    float: left;
+    list-style-type: none;
+    margin: 0 3% 0 0;
+    width: 31%;
+}
+.individual-featured-work h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+    text-align: center;
+}
+.individual-featured-work:nth-child(3n) {
+    margin: 0;
+    width: 31%;
+}
+.case-study-sidebar .read-more-link {
+  visibility: hidden;
+}
+.case-study-sidebar a:hover {
+  color: #45ac9d;
+}
 /*blog posts on homepage*/
 .recent-posts {
+  clear: both;
   overflow: hidden;
 }
 .blog-post {
@@ -53,6 +89,9 @@
 
 
 /*case study page*/
+article.case-study {
+  clear: both;
+}
 aside.case-study-sidebar {
   float: left;
   width: 100%;
