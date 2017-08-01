@@ -126,6 +126,29 @@ footer {
   clear: both;
 }
 
+
+/* Contact Form */
+/*.nf-form-fields-required {
+  display: none;
+}
+.ninja-forms-req-symbol {
+  display: none;
+}*/
+
+#nf-field-4 {
+  float: right;
+}
+.page-id-47350 .site-content {
+  width: 45%;
+  margin: auto;
+}
+.nf-field-label {
+  font: 400 15px 'Verdana';
+}
+#nf-field-4 {
+  width: 10em;
+}
+
 /*Media Queries*/
 
 @media (min-width: 769px) {
