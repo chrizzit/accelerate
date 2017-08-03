@@ -13,115 +13,140 @@
 @import url("../accelerate-theme/style.css");
 
 /* Homepage Styles */
+
 .home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 
 /*case studies on homepage*/
+
 .homepage-featured-work {
-	overflow:auto;
+  overflow: auto;
 }
+
 .homepage-featured-work h4 {
-	font-family:'Montserrat';
-	text-transform:uppercase;
-	text-align:center;
-	margin:0 0 40px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px;
 }
+
 .homepage-featured-work ul {
-	margin:0;
+  margin: 0;
 }
+
 .individual-featured-work {
-    float: left;
-    list-style-type: none;
-    margin: 0 3% 0 0;
-    width: 31%;
+  float: left;
+  list-style-type: none;
+  margin: 0 3% 0 0;
+  width: 31%;
 }
+
 .individual-featured-work h3 {
-    font-size: 18px;
-    font-weight: normal;
-    margin-top: 24px;
-    text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 24px;
+  text-align: center;
 }
+
 .individual-featured-work:nth-child(3n) {
-    margin: 0;
-    width: 31%;
+  margin: 0;
+  width: 31%;
 }
+
 .case-study-sidebar .read-more-link {
   visibility: hidden;
 }
+
 .case-study-sidebar a:hover {
   color: #45ac9d;
 }
+
+
 /*blog posts on homepage*/
+
 .recent-posts {
   clear: both;
   overflow: hidden;
 }
+
 .blog-post {
-	width: 44.75%;
-	padding-right: 50px;
-	float: left;
+  width: 44.75%;
+  padding-right: 50px;
+  float: left;
 }
+
 .blog-post h4 {
-	font: 16px 'Montserrat';
-	color: #a6a6a6;
-	text-transform: uppercase;
-	margin-top: 0;
+  font: 16px 'Montserrat';
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin-top: 0;
 }
+
 .blog-post h2 {
-	font: 700 24px 'Montserrat';
-	margin: 36px 0;
+  font: 700 24px 'Montserrat';
+  margin: 36px 0;
 }
+
 .blog-post .read-more-link {
-	font: 700 15px 'Montserrat';
-	color: #45ac9d;
-	text-transform: uppercase;
+  font: 700 15px 'Montserrat';
+  color: #45ac9d;
+  text-transform: uppercase;
 }
 
 
 /*case study page*/
+
 article.case-study {
   clear: both;
 }
+
 aside.case-study-sidebar {
   float: left;
   width: 100%;
   margin: 2em 15px 0 5px;
 }
+
 aside.case-study-sidebar h2, h4, h5, h6 {
   font-weight: 400;
   margin: 10px 0 10px 0;
 }
+
 aside.case-study-sidebar h2 {
   font-size: 1.5em;
   margin-top: 0;
 }
+
 aside.case-study-sidebar h5 {
   opacity: .50;
   font-size: .75em;
 }
+
 aside.case-study-sidebar p {
   margin-top: 30px;
   overflow: hidden;
 }
+
 div.case-study-images {
   display: block;
   float: left;
   width: 100%;
   margin: 2em 0px 1em 10px;
 }
+
 div.case-study-images p {
   margin-top: 0;
 }
+
 footer {
   clear: both;
 }
@@ -138,15 +163,164 @@ footer {
 #nf-field-4 {
   float: right;
 }
+
 .page-id-47350 .site-content {
   width: 45%;
   margin: auto;
 }
+
 .nf-field-label {
   font: 400 15px 'Verdana';
 }
+
 #nf-field-4 {
   width: 10em;
+}
+
+
+/*About Page*/
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 5em;
+    padding: 7em 0;
+}
+.about-hero {
+	text-align:center;
+}
+.about-hero h2 {
+    color: white;
+    font-family: "open sans";
+    font-weight: normal;
+    width: 600px;
+    margin: auto;
+    line-height: 32px;
+}
+.about-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.about-description {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.about-description h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+        flex-direction: column;
+/*  display: inline-block;*/
+}
+.item {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.icon {
+  margin: auto;
+}
+.caption {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+	width: 67%;
+  text-align: justify;
+  margin: auto;
+}
+.caption h3 {
+	margin-top: 0;
+}
+.alternating-content {
+  margin: auto;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.alternating-content .item {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+padding: 30px 5px;
+}
+.alternating-content .caption {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.alternating-content .icon {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.alternating-content .item:after {
+content: "";
+display: block;
+clear: both;
+}
+.alternating-content:nth-child(odd) .item {
+
+}
+.alternating-content:nth-child(even) .item {
+-ms-flex-direction: row-reverse;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+        flex-direction: row-reverse;
+}
+/*.alternating-content:nth-child(odd) .icon {
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+}
+.alternating-content:nth-child(even) .icon {
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}*/
+.about-contact-text {
+	float: left;
+	width: 60%;
+}
+.about-btn {
+	float: right;
+	}
+.about-contact{
+	padding: 40px 25px 25px 25px;
+	width: 100%;
+	margin:auto;
+  border-top: 1px solid #bfbfbf;
+}
+.about-contact h3{
+	margin-top: 0px;
 }
 
 /*Media Queries*/
