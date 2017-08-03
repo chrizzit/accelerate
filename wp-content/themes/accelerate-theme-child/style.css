@@ -187,6 +187,8 @@ footer {
 }
 .about-hero {
 	text-align:center;
+  height: 270px;
+  padding-top: 5em;
 }
 .about-hero h2 {
     color: white;
