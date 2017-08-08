@@ -83,6 +83,7 @@
   width: 44.75%;
   padding-right: 50px;
   float: left;
+  text-align: justify;
 }
 
 .blog-post h4 {
@@ -334,4 +335,157 @@ clear: both;
   div.case-study-images {
     width: 60%;
   }
+}
+
+
+/* 404 Page */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+$color1: white;
+$color2: #342643;
+$color3: #1FA9D6;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*html {
+    height: 100%;
+}
+body {
+    background: url(https://i.imgur.com/CZdBKjO.gif) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    background-color: $color2;
+    height: 100%;
+}
+*/
+.text-wrapper {
+    height: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+.title-404 {
+    font-size: 9em;
+    font-weight: 700;
+    color: $color1;
+    position:relative;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: $color1;
+    position:relative;
+}
+
+.buttons {
+    margin: 30px;
+
+    a.button {
+        background-color: $color2;
+        font-weight: 700;
+        border: 2px solid $color1;
+        text-decoration: none;
+        padding: 15px;
+        text-transform: uppercase;
+        color: $color1;
+        border-radius: 26px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: lighten($color2, 10%);
+            color: white;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+
+}
+
+
+// Glitch animation from https://codepen.io/lbebber/pen/ypgql
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(200)+px,9999px,random(200)+px,0);
+    }
+  }
+}
+.subtitle:after, .title:after{
+  content:attr(data-content);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:$color1;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  -webkit-animation:noise-anim 2s infinite linear alternate-reverse;
+          animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(200)+px,9999px,random(200)+px,0);
+    }
+  }
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(200)+px,9999px,random(200)+px,0);
+    }
+  }
+}
+.subtitle:before, .title:before{
+  content:attr(data-content);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue;
+  top:0;
+  color:$color1;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  -webkit-animation:noise-anim-2 3s infinite linear alternate-reverse;
+          animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+
+/* Sidebar-2 twitter widget */
+.homepage-sidebar {
+  float: right;
+  width: 44.75%;
+}
+.homepage-sidebar h3 {
+  font: 1em 'Montserrat';
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.homepage-sidebar aside{
+    margin: 0 0 50px 0;
+}
+.mc4wp-form-fields input {
+  float: right;
 }

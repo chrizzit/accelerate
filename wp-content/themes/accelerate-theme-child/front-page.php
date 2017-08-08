@@ -17,7 +17,7 @@ get_header(); ?>
 <section class="home-page">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="homepage-hero">
-				<div class="site-content">
+				<div class="site-content" id="homepage-content">
 					<?php the_content(); ?>
 					<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 				</div><!-- .site-content -->
@@ -60,7 +60,18 @@ get_header(); ?>
      <?php endwhile; ?>
     <?php wp_reset_query(); ?>
    </div>
+   <div class="homepage-sidebar">
+     <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+       <div id="secondary" class="widget-area" role="complementary">
+       	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+       </div>
+     <?php endif; ?>
+   </div>
   </div>
 </section>
+
+
+
+
 
 <?php get_footer(); ?>
